@@ -1,0 +1,24 @@
+GET http://localhost:5099/todos
+
+###
+
+POST http://localhost:5099/todos 
+content-type: application/json
+
+{
+    "id": 2,
+    "name": "Write Another Demo",
+    "dueDate": "2024-12-31",
+    "isCompleted": false
+}
+
+###
+
+GET http://localhost:5099/todos/2
+
+###
+
+DELETE http://localhost:5099/todos/2
+
+###
+GET http://localhost:5099/tasks/1
